@@ -290,10 +290,10 @@ body {
 .day--holiday .event--full .event-time-badge { color: #1a6b3a; background: #e0f5e8; }
 .day--final   .event--full .event-time-badge { color: #7a3a00; background: #fff0e0; }
 
-.event-body { display: grid; grid-template-columns: 380px 1fr; }
+.event-body { display: flex; flex-direction: column; }
 
 /* ── SLIDESHOW ── */
-.slideshow { position: relative; overflow: hidden; background: #111; }
+.slideshow { position: relative; overflow: hidden; background: #111; width: 100%; }
 
 .slides-track { position: relative; width: 100%; }
 
@@ -301,7 +301,7 @@ body {
 .slide.active { position: relative; opacity: 1; pointer-events: all; }
 
 .slide img {
-  width: 100%; height: 280px; object-fit: cover; display: block;
+  width: 100%; height: 420px; object-fit: cover; display: block;
   cursor: zoom-in; transition: transform 0.4s ease;
 }
 .slide img:hover { transform: scale(1.03); }
@@ -381,7 +381,7 @@ body {
   .day::before { display: none; }
   .day-marker { flex-direction: row; gap: 12px; align-items: center; margin-bottom: 16px; }
   .day-content { padding-left: 0; }
-  .event-body { grid-template-columns: 1fr; }
+  .event-body { flex-direction: column; }
   .slide img { height: 240px; }
   .nav { padding: 20px 24px; }
   .hero-content { padding: 0 24px 80px; }
