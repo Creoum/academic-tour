@@ -400,3 +400,41 @@ body {
   .slide img { height: 200px; }
   .lightbox-img { max-height: 70vh; }
 }
+
+/* ── FOOTER SOCIALS ── */
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.footer-social-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  color: rgba(255,255,255,0.5);
+  text-decoration: none;
+  border: 1px solid rgba(255,255,255,0.15);
+  padding: 10px 20px;
+  border-radius: 100px;
+  transition: all 0.25s ease;
+}
+
+.footer-social-link:hover {
+  color: #fff;
+  border-color: var(--amber-light);
+  background: rgba(245,169,66,0.1);
+  transform: translateY(-2px);
+}
+
+.footer-social-link svg {
+  flex-shrink: 0;
+  opacity: 0.7;
+  transition: opacity 0.25s;
+}
+
+.footer-social-link:hover svg { opacity: 1; }
